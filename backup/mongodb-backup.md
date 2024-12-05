@@ -13,8 +13,7 @@ sudo apt-get install mongodb-org mongodump mongorestore
 3. Create a Backup Script:
    Create a script (e.g., backup_mongodb.sh) to automate the backup process:
 
-```Bash
-
+```bash
 #!/bin/bash
 
 # Set backup directory
