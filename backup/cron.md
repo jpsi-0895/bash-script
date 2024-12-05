@@ -59,3 +59,24 @@ Add a new line to your crontab file with the desired schedule and command.
 - `Security`: Be mindful of permissions and security when running scripts via cron.
 
 ![alt text](image.png)
+
+**Specifying multiple values**
+
+| Value       | Description                                                                  | Example                                                                                                  |
+| ----------- | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Comma ,     | specifies a list of values                                                   | 1,3,4,7,8                                                                                                |
+| Dash -      | specifies a range of values                                                  | 1-6 is equivalent to "1,2,3,4,5,6"                                                                       |
+| Asterisk \* | specifies all possible values for a field                                    | An asterisk in the hour (second) field would be equivalent to 'every hour'.                              |
+| Slash /     | can be used in conjunction with an asterisk to skip a given number of values | /3 means to skip to every third value. So, \*/3 in the hour field is equivalent to "0,3,6,9,12,15,18,21" |
+
+![graphical view of these fields](image-1.png)
+
+**Fields**
+
+| Field no. | Description      | Permitted values                         |
+| --------- | ---------------- | ---------------------------------------- |
+| 1         | minute           | 0-59                                     |
+| 2         | hour             | 0-23                                     |
+| 3         | day of the month | 1-31                                     |
+| 4         | month            | 1-12                                     |
+| 5         | day of the week  | 0-7 (both 0 and 7 are considered Sunday) |
